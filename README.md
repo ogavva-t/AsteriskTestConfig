@@ -9,8 +9,8 @@ How to use
 
 SIP Account
 
-9001 ... Music On Hold
-9002 ... Echo
-9003 ... Milliwatt
+- 9001 ... Music On Hold
+- 9002 ... Echo
+- 9003 ... Milliwatt
 
 
