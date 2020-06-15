@@ -9,6 +9,7 @@ sed -i "s/ENV_TRUNK_URL/$TRUNK_URL/" /etc/asterisk/pjsip_trunk.conf
 sed -i "s/ENV_TRUNK_PORT/$TRUNK_PORT/" /etc/asterisk/pjsip_trunk.conf
 sed -i "s/ENV_TRUNK_USERNAME/$TRUNK_USERNAME/" /etc/asterisk/pjsip_trunk.conf
 sed -i "s/ENV_TRUNK_PASSWORD/$TRUNK_PASSWORD/" /etc/asterisk/pjsip_trunk.conf
+sed -i "s/ENV_TRUNK_CALLERID/$TRUNK_CALLERID/" /etc/asterisk/extensions.conf
 
 
 # Start server.
