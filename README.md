@@ -31,3 +31,13 @@
 - 9002 ... Echo
 - 9003 ... Milliwatt
 - 9004 ... Oubbound/Inbound Call via Trunk
+
+
+### Debug With Sngrep
+
+You can use sngrep inside the container.
+https://github.com/irontec/sngrep
+
+```
+docker exec -it [Container Name] sngrep
+```
