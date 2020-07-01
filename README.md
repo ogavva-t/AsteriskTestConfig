@@ -56,3 +56,9 @@ https://github.com/irontec/sngrep
 ```
 docker exec -it [Container Name] sngrep
 ```
+
+### Debug With Asterisk-CLI
+
+```
+docker exec -it [Container Name] rasterisk
+```
