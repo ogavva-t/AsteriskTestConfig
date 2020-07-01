@@ -16,9 +16,9 @@ sed -i "s/ENV_TRUNK_CALLERID/$TRUNK_CALLERID/" /etc/asterisk/extensions.conf
 
 
 if [ $TRUNK_TYPE=REG]; then
-    echo '#include "pjsip_trunk.conf"' >> /etc/asterisk/pjsip.conf
+    echo '#include "pjsip_trunk_reg.conf"' >> /etc/asterisk/pjsip.conf
 elif [ $TRUNK_TYPE=NO_AUTH]; then
-    echo '#include "pjsip_trunk.conf"' >> /etc/asterisk/pjsip.conf
+    echo '#include "pjsip_trunk_noauth.conf"' >> /etc/asterisk/pjsip.conf
 fi
 
 # Start server.
