@@ -38,6 +38,10 @@ docker run -d -p 5060:5060/udp -p 10000-10100:10000-10100/udp -e EXTEN_PASSWORD=
   ogavvat/asterisk.testconfig
 ```
 
+## Diagrams
+
+![Diagram](https://github.com/ogavva-t/AsteriskTestConfig/blob/master/Diagrams/Diagram.png?raw=true "Diagram")
+
 
 
 ## SIP Account
