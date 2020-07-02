@@ -14,10 +14,9 @@ sed -i "s/ENV_TRUNK_USERNAME/$TRUNK_USERNAME/" /etc/asterisk/pjsip_trunk.conf
 sed -i "s/ENV_TRUNK_PASSWORD/$TRUNK_PASSWORD/" /etc/asterisk/pjsip_trunk.conf
 sed -i "s/ENV_TRUNK_CALLERID/$TRUNK_CALLERID/" /etc/asterisk/extensions.conf
 
-
-if [ $TRUNK_TYPE=REG]; then
+if [ $TRUNK_TYPE eq "REG" ]; then
     echo '#include "pjsip_trunk_reg.conf"' >> /etc/asterisk/pjsip.conf
-elif [ $TRUNK_TYPE=NO_AUTH]; then
+elif [ $TRUNK_TYPE eq "NO_AUTH" ]; then
     echo '#include "pjsip_trunk_noauth.conf"' >> /etc/asterisk/pjsip.conf
 fi
 
