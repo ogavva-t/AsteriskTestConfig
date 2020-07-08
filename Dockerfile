@@ -25,5 +25,8 @@ COPY ./configs /etc/asterisk
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
+COPY createCallFile.sh /usr/bin/
+RUN chmod +x /usr/bin/createCallFile.sh
+
 ENTRYPOINT [ "/usr/bin/entrypoint.sh" ]
 
