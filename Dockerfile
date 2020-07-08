@@ -1,5 +1,4 @@
 FROM debian:buster
-MAINTAINER Takayuki Ogawa <ogavva.t@gmail.com>
 
 # Install sngrep
 RUN apt-get update
