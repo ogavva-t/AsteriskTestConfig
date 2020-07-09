@@ -51,6 +51,14 @@ docker run -d -p 5060:5060/udp -p 10000-10100:10000-10100/udp -e EXTEN_PASSWORD=
 - 9003 ... Milliwatt
 - 9004 ... Outbound/Inbound Call via Trunk
 
+### Create Incoming Call
+
+```
+ docker exec -it [Container Name] createCallFile.sh [SIP Account: 9001-9004] [EXTENSION] [CALLERID]
+
+ e.g)
+  docker exec -it [Container Name] createCallFile.sh 9001 0312345678 05011112222
+```
 
 ### Debug With Sngrep
 

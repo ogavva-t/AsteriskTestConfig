@@ -1,16 +1,15 @@
-#!/bin/sh
+#!/bin/bash
+
+CHANNEL=$1
+CALLERID=$2
+EXTENSION=$3
 
 NewCallFile=/tmp/makecall.call
-(
-cat <<'EOF_CALLFILE'
-channel: PJSIP/9001
-Context: MOH
-Extension: 05011111111
-Callerid: 05099999999
-AlwaysDelete: yes
-
-EOF_CALLFILE
-) > $NewCallFile
+echo "Channel: PJSIP/$CHANNEL" > $NewCallFile
+echo "Context: MOH" >> $NewCallFile
+echo "Extension: $EXTENSION" >> $NewCallFile
+echo "Callerid: $CALLERID" >> $NewCallFile
+echo "AlwaysDelete: yes" >> $NewCallFile
 
 cp $NewCallFile /var/spool/asterisk/outgoing
 
